@@ -7,4 +7,28 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>LabCodingStandards</name>
 	<description>Lab Coding Standards, Sofware Engineering II</description>
+<build> 
+<plugins> 
+	<plugin> 
+		<groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-site-plugin</artifactId> 
+		<version>3.7.1</version> 
+	</plugin> 
+	<plugin> 
+		<groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-project-info-reports-plugin</artifactId> 
+		<version>3.0.0</version> 
+	</plugin> 
+</plugins> 
+</build> 
+<reporting> 
+<plugins> 
+<plugin> 
+	<artifactId>maven-checkstyle-plugin</artifactId> 
+	<configuration> 
+		<configLocation>MyName_checks.xml</configLocation>
+	</configuration> 
+</plugin> 
+</plugins> 
+</reporting>
 </project>
